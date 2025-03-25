@@ -64,6 +64,13 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* Bildgrößen allgemein anpassen */
+img {
+    max-width: 100%; /* Verhindert, dass Bilder den Container sprengen */
+    height: auto;    /* Behält Proportionen bei */
+    display: block;  /* Entfernt unnötige Abstände */
+}
+
 .section-img {
     max-width: 100%;
     border-radius: 10px;
@@ -138,9 +145,39 @@ footer {
     padding: 20px;
 }
 
+/* Responsive Anpassungen */
 @media (max-width: 768px) {
-    .intro { flex-direction: column; }
-    .intro-img { max-width: 100%; }
-    nav ul { flex-direction: column; }
-    nav ul li { margin: 10px 0; }
+    .intro { 
+        flex-direction: column; 
+    }
+    .intro-img { 
+        max-width: 100%; /* Bild nimmt volle Breite auf Mobilgeräten */
+    }
+    nav ul { 
+        flex-direction: column; 
+    }
+    nav ul li { 
+        margin: 10px 0; 
+    }
+    h2 {
+        font-size: 1.5em; /* Kleinere Überschrift auf Mobilgeräten */
+    }
+    .section-img {
+        width: 100%; /* Bilder nehmen volle Breite ein */
+    }
+}
+
+/* Desktop-Anpassungen */
+@media (min-width: 769px) {
+    .intro-img {
+        max-width: 50%; /* Bild bleibt bei 50% auf Desktop */
+    }
+    .section-img {
+        max-width: 80%; /* Bilder etwas kleiner als volle Breite */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 {
+        font-size: 2rem; /* Größere Überschrift auf Desktop */
+    }
 }
