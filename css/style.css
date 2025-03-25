@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+nav {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #2980b9;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #4a627c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.benefits li, .pricing li {
+    background: #f8fafc;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits li::before {
+    content: '✓';
+    color: #2980b9;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cta {
+    background: #2980b9;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta:hover {
+    background: #1c6ea4;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .intro { flex-direction: column; }
+    .intro-img { max-width: 100%; }
+    nav ul { flex-direction: column; }
+    nav ul li { margin: 10px 0; }
+}
