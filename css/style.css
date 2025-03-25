@@ -64,7 +64,7 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Allgemeine Bildregel strenger anpassen */
+/* Allgemeine Bildregel */
 img {
     max-width: 100%;
     height: auto;
@@ -72,9 +72,9 @@ img {
 }
 
 .section-img {
-    max-width: 70%; /* Reduziert auf 70% der Containerbreite */
+    width: 200px; /* Drastisch auf 200px festgelegt */
     border-radius: 10px;
-    margin: 20px auto; /* Zentriert das Bild */
+    margin: 20px auto; /* Zentriert */
 }
 
 .intro {
@@ -84,7 +84,7 @@ img {
 }
 
 .intro-img {
-    max-width: 40%; /* Reduziert auf 40% für Desktop */
+    width: 150px; /* Drastisch auf 150px festgelegt */
     border-radius: 10px;
 }
 
@@ -151,8 +151,8 @@ footer {
         flex-direction: column; 
     }
     .intro-img { 
-        max-width: 80%; /* Etwas größer auf Mobilgeräten, aber nicht 100% */
-        margin: 0 auto; /* Zentriert */
+        width: 120px; /* Noch kleiner auf Mobilgeräten */
+        margin: 0 auto;
     }
     nav ul { 
         flex-direction: column; 
@@ -164,17 +164,17 @@ footer {
         font-size: 1.5em;
     }
     .section-img {
-        max-width: 90%; /* Etwas größer als Desktop, aber nicht voll */
+        width: 150px; /* Noch kleiner auf Mobilgeräten */
     }
 }
 
 /* Desktop-Anpassungen */
 @media (min-width: 769px) {
     .intro-img {
-        max-width: 40%; /* Beibehalten für Desktop */
+        width: 150px; /* Fest auf 150px */
     }
     .section-img {
-        max-width: 70%; /* Begrenzt auf 70% für Desktop */
+        width: 200px; /* Fest auf 200px */
     }
     h2 {
         font-size: 2rem;
