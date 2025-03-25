@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Hauptmenü">
         <div class="logo">GastroConnect</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <button class="hamburger" aria-label="Menü öffnen/schließen" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">Über uns</a></li>
             <li><a href="benefits.html">Vorteile</a></li>
             <li><a href="pricing.html">Preise</a></li>
@@ -20,20 +21,22 @@
     </nav>
 
     <header>
-        <h1>Digitale Speisekarten – Modern, Hygienisch, Effizient</h1>
-        <p>Ersetzen Sie gedruckte Speisekarten durch innovative QR-Code Lösungen!</p>
+        <h1>Digitale Speisekarten für Ihre Gastronomie</h1>
+        <p>Modern. Hygienisch. Effizient.</p>
         <a href="contact.html" class="cta">Jetzt starten</a>
     </header>
 
     <section class="intro">
         <div class="intro-text">
             <h2>Willkommen bei GastroConnect</h2>
-            <p>Wir bieten Ihnen eine moderne Lösung zur Digitalisierung Ihrer Speisekarten – einfach, schnell und nachhaltig.</p>
+            <p>Wir bieten innovative QR-Code-Lösungen, um Ihre Speisekarten zu digitalisieren – einfach, schnell und nachhaltig.</p>
         </div>
     </section>
 
     <footer>
         <p>© 2025 GastroConnect | Alle Rechte vorbehalten</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
