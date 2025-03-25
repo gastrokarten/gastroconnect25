@@ -160,56 +160,107 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Pricing Section */
+/* Überarbeitete Pricing Section */
 .pricing {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
+}
+
+.pricing-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .pricing-plan {
     background: #ffffff;
-    padding: 30px;
+    padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pricing-plan.featured {
-    border: 2px solid #2980b9;
+    background: linear-gradient(135deg, #2980b9, #1c6ea4);
+    color: white;
     transform: scale(1.05);
 }
 
+.pricing-plan.featured h3,
+.pricing-plan.featured .price,
+.pricing-plan.featured ul li {
+    color: white;
+}
+
+.pricing-plan.featured .cta {
+    background: #ffffff;
+    color: #2980b9;
+}
+
+.pricing-plan.featured .cta:hover {
+    background: #f5f7fa;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
 .pricing-plan h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #2d3748;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .pricing-plan .price {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: #2980b9;
     margin-bottom: 20px;
 }
 
+.pricing-plan .price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.pricing-plan.featured .price span {
+    color: #ddd;
+}
+
 .pricing-plan ul {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .pricing-plan ul li {
-    margin: 10px 0;
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #2d3748;
 }
 
 .pricing-plan:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Überarbeitete Contact Section */
+.pricing-plan.featured:hover {
+    transform: scale(1.07);
+}
+
+/* Contact Section */
 .contact {
     max-width: 1200px;
     margin: 50px auto;
@@ -404,8 +455,16 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .pricing {
+    .pricing-container {
         grid-template-columns: 1fr;
+    }
+
+    .pricing-plan.featured {
+        transform: scale(1);
+    }
+
+    .pricing-plan:hover {
+        transform: scale(1.02);
     }
 
     .contact-container {
