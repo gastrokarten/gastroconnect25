@@ -64,28 +64,34 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Allgemeine Bildregel */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.section-img {
-    width: 200px; /* Drastisch auf 200px festgelegt */
-    border-radius: 10px;
-    margin: 20px auto; /* Zentriert */
-}
-
 .intro {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    /* Hintergrundbild hinzufügen */
+    background-image: url('../img/qr-code-restaurant.jpg');
+    background-size: cover; /* Bild füllt den Bereich aus */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Keine Wiederholung */
+    position: relative; /* Für Überlagerung */
+    padding: 40px; /* Mehr Platz für Inhalt */
 }
 
-.intro-img {
-    width: 150px; /* Drastisch auf 150px festgelegt */
-    border-radius: 10px;
+/* Überlagerung für bessere Lesbarkeit */
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dunkle Überlagerung */
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.intro-text {
+    position: relative; /* Text über der Überlagerung */
+    z-index: 2;
+    color: white; /* Weißer Text für Kontrast */
+    text-align: center; /* Zentrierter Text */
 }
 
 h2 {
@@ -148,35 +154,5 @@ footer {
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     .intro { 
-        flex-direction: column; 
-    }
-    .intro-img { 
-        width: 120px; /* Noch kleiner auf Mobilgeräten */
-        margin: 0 auto;
-    }
-    nav ul { 
-        flex-direction: column; 
-    }
-    nav ul li { 
-        margin: 10px 0; 
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    .section-img {
-        width: 150px; /* Noch kleiner auf Mobilgeräten */
-    }
-}
-
-/* Desktop-Anpassungen */
-@media (min-width: 769px) {
-    .intro-img {
-        width: 150px; /* Fest auf 150px */
-    }
-    .section-img {
-        width: 200px; /* Fest auf 200px */
-    }
-    h2 {
-        font-size: 2rem;
-    }
-}
+        padding: 30px; /* Weniger Padding auf Mobilgeräten */
+   
