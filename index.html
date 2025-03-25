@@ -7,32 +7,161 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="no-overflow-x">
+    <!-- Navigation -->
     <nav role="navigation" aria-label="Hauptmenü">
         <div class="logo">GastroConnect</div>
         <button class="hamburger" aria-label="Menü öffnen/schließen" aria-expanded="false">☰</button>
         <ul class="nav-menu">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">Über uns</a></li>
-            <li><a href="benefits.html">Vorteile</a></li>
-            <li><a href="pricing.html">Preise</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">Über uns</a></li>
+            <li><a href="#benefits" class="nav-link">Vorteile</a></li>
+            <li><a href="#pricing" class="nav-link">Preise</a></li>
+            <li><a href="#contact" class="nav-link">Kontakt</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Digitale Speisekarten für Ihre Gastronomie</h1>
-        <p>Modern. Hygienisch. Effizient.</p>
-        <a href="contact.html" class="cta">Jetzt starten</a>
-    </header>
+    <!-- Hauptinhalt -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <header>
+                <h1>Digitale Speisekarten für Ihre Gastronomie</h1>
+                <p>Modern. Hygienisch. Effizient.</p>
+                <a href="#contact" class="cta">Jetzt starten</a>
+            </header>
+            <div class="intro">
+                <div class="intro-text">
+                    <h2>Willkommen bei GastroConnect</h2>
+                    <p>Wir bieten innovative QR-Code-Lösungen, um Ihre Speisekarten zu digitalisieren – einfach, schnell und nachhaltig.</p>
+                    <!-- Hier kannst du weitere Infos ergänzen -->
+                </div>
+            </div>
+        </section>
 
-    <section class="intro">
-        <div class="intro-text">
-            <h2>Willkommen bei GastroConnect</h2>
-            <p>Wir bieten innovative QR-Code-Lösungen, um Ihre Speisekarten zu digitalisieren – einfach, schnell und nachhaltig.</p>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="page-section">
+            <header>
+                <h1>Über GastroConnect</h1>
+                <p>Ihr Partner für digitale Innovationen</p>
+            </header>
+            <div class="content">
+                <h2>Unsere Vision</h2>
+                <p>Wir möchten die Gastronomie revolutionieren, indem wir moderne Technologie nutzen, um Prozesse zu vereinfachen und Gästeerlebnisse zu verbessern.</p>
+                <!-- Hier kannst du weitere Infos ergänzen -->
+            </div>
+        </section>
 
+        <!-- Benefits Section -->
+        <section id="benefits" class="page-section">
+            <header>
+                <h1>Vorteile von GastroConnect</h1>
+                <p>Warum unsere Lösung die Beste ist</p>
+            </header>
+            <div class="content">
+                <ul class="benefits-list">
+                    <li><span>✓</span> Hygienisch: Keine physischen Speisekarten mehr.</li>
+                    <li><span>✓</span> Effizient: Sofortige Updates ohne Druckkosten.</li>
+                    <li><span>✓</span> Nachhaltig: Weniger Papier, mehr Umweltschutz.</li>
+                    <li><span>✓</span> Modern: QR-Codes für ein zeitgemäßes Erlebnis.</li>
+                    <!-- Hier kannst du weitere Vorteile hinzufügen -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="page-section">
+            <header>
+                <h1>Unsere Preispläne</h1>
+                <p>Wählen Sie den perfekten Plan für Ihr Restaurant</p>
+            </header>
+            <div class="content pricing-container">
+                <div class="pricing-plan">
+                    <h3>Basic</h3>
+                    <p class="price">9,99 €<span>/ Monat</span></p>
+                    <ul>
+                        <li>1 digitale Speisekarte</li>
+                        <li>QR-Code-Generator</li>
+                        <li>E-Mail-Support</li>
+                        <li>-</li>
+                    </ul>
+                    <a href="#contact" class="cta">Jetzt starten</a>
+                </div>
+                <div class="pricing-plan featured">
+                    <span class="popular-badge">Beliebt</span>
+                    <h3>Pro</h3>
+                    <p class="price">19,99 €<span>/ Monat</span></p>
+                    <ul>
+                        <li>5 digitale Speisekarten</li>
+                        <li>QR-Code-Generator</li>
+                        <li>Premium-Support</li>
+                        <li>Grundlegende Statistiken</li>
+                    </ul>
+                    <a href="#contact" class="cta">Jetzt starten</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Enterprise</h3>
+                    <p class="price">49,99 €<span>/ Monat</span></p>
+                    <ul>
+                        <li>Unbegrenzte Speisekarten</li>
+                        <li>QR-Code-Generator</li>
+                        <li>24/7 Support</li>
+                        <li>Erweiterte Statistiken & Branding</li>
+                    </ul>
+                    <a href="#contact" class="cta">Jetzt starten</a>
+                </div>
+                <!-- Hier kannst du weitere Pläne oder Details hinzufügen -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <header>
+                <h1>Kontaktieren Sie uns</h1>
+                <p>Wir freuen uns, von Ihnen zu hören!</p>
+            </header>
+            <div class="content contact-container">
+                <div class="contact-form-wrapper">
+                    <h2>Ihre Nachricht</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon (optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Wie können wir Ihnen helfen?" required></textarea>
+                        </div>
+                        <button type="submit" class="cta">Nachricht senden</button>
+                    </form>
+                </div>
+                <div class="contact-info-wrapper">
+                    <h2>Kontaktinformationen</h2>
+                    <div class="contact-details">
+                        <p><strong>E-Mail:</strong> <a href="mailto:info@gastroconnect.de">info@gastroconnect.de</a></p>
+                        <p><strong>Telefon:</strong> +49 123 456 7890</p>
+                        <p><strong>Adresse:</strong> Musterstraße 1, 12345 Musterstadt, Deutschland</p>
+                    </div>
+                    <div class="contact-hours">
+                        <h3>Öffnungszeiten</h3>
+                        <p>Mo - Fr: 9:00 - 17:00 Uhr</p>
+                        <p>Sa - So: Geschlossen</p>
+                    </div>
+                    <!-- Hier kannst du weitere Kontaktinfos ergänzen -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <p>© 2025 GastroConnect | Alle Rechte vorbehalten</p>
     </footer>
