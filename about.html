@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über uns - GastroConnect</title>
+    <title>GastroConnect - Über uns</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Hauptmenü">
         <div class="logo">GastroConnect</div>
-        <ul>
+        <button class="hamburger" aria-label="Menü öffnen/schließen" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Über uns</a></li>
+            <li><a href="about.html" aria-current="page">Über uns</a></li>
             <li><a href="benefits.html">Vorteile</a></li>
             <li><a href="pricing.html">Preise</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
 
-    <section class="about">
-        <h2>Unsere Geschichte</h2>
-        <img src="img/team.jpg" alt="Unser Team" class="section-img">
-        <p>Die Idee zu GastroConnect entstand 2016 während meiner Ausbildung. Damals fiel mir auf, wie mühsam die Pflege traditioneller Speisekarten ist – ständige Updates, fehlende Exemplare und hoher Aufwand für das Personal.</p>
-        <p>Jahre später entwickelten wir eine digitale Lösung, die Zeit spart, nachhaltig ist und das Leben von Gastronomen erleichtert.</p>
+    <header>
+        <h1>Über GastroConnect</h1>
+        <p>Ihre Partner für digitale Gastronomie-Lösungen</p>
+        <a href="contact.html" class="cta">Kontaktieren Sie uns</a>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Unsere Mission</h2>
+            <p>Wir revolutionieren die Gastronomie mit innovativen digitalen Speisekarten, die Effizienz, Hygiene und Nachhaltigkeit fördern.</p>
+        </div>
     </section>
 
     <footer>
         <p>© 2025 GastroConnect | Alle Rechte vorbehalten</p>
     </footer>
+
+    <script>
+        // Einfaches Toggle für das Hamburger-Menü
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
 </body>
 </html>
