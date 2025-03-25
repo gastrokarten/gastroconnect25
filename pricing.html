@@ -3,36 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preise - GastroConnect</title>
+    <title>GastroConnect - Preise</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Hauptmenü">
         <div class="logo">GastroConnect</div>
-        <ul>
+        <button class="hamburger" aria-label="Menü öffnen/schließen" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Über uns</a></li>
             <li><a href="benefits.html">Vorteile</a></li>
-            <li><a href="pricing.html">Preise</a></li>
+            <li><a href="pricing.html" aria-current="page">Preise</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
 
+    <header>
+        <h1>Unsere Preise</h1>
+        <p>Flexible Tarife für jedes Restaurant</p>
+    </header>
+
     <section class="pricing">
-        <h2>Unsere Pakete</h2>
-        <ul>
-            <li><strong>Basic:</strong> QR-Code als PDF & JPG – <strong>19,99€</strong></li>
-            <li><strong>Standard:</strong> QR-Code (PDF & JPG) + 40 Sticker – <strong>34,99€</strong></li>
-            <li><strong>Premium:</strong> QR-Code im Firmenlook + 40 Sticker – <strong>59,99€</strong></li>
-            <li><strong>Service:</strong> Speisekarten-Updates – <strong>10,99€</strong></li>
-            <li><strong>Sticker:</strong> 40 zusätzliche Sticker – <strong>16,99€</strong></li>
-        </ul>
-        <img src="img/pricing.jpg" alt="Preisübersicht" class="section-img">
+        <div class="pricing-plan">
+            <h3>Basic</h3>
+            <p class="price">9,99 € / Monat</p>
+            <ul>
+                <li>1 digitale Speisekarte</li>
+                <li>QR-Code-Generator</li>
+                <li>Grundsupport</li>
+            </ul>
+            <a href="contact.html" class="cta">Auswählen</a>
+        </div>
+        <div class="pricing-plan featured">
+            <h3>Pro</h3>
+            <p class="price">19,99 € / Monat</p>
+            <ul>
+                <li>5 digitale Speisekarten</li>
+                <li>QR-Code-Generator</li>
+                <li>Premium-Support</li>
+                <li>Statistiken</li>
+            </ul>
+            <a href="contact.html" class="cta">Auswählen</a>
+        </div>
+        <div class="pricing-plan">
+            <h3>Enterprise</h3>
+            <p class="price">49,99 € / Monat</p>
+            <ul>
+                <li>Unbegrenzte Speisekarten</li>
+                <li>QR-Code-Generator</li>
+                <li>24/7 Support</li>
+                <li>Statistiken & Branding</li>
+            </ul>
+            <a href="contact.html" class="cta">Auswählen</a>
+        </div>
     </section>
 
     <footer>
         <p>© 2025 GastroConnect | Alle Rechte vorbehalten</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
