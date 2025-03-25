@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vorteile - GastroConnect</title>
+    <title>GastroConnect - Vorteile</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Hauptmenü">
         <div class="logo">GastroConnect</div>
-        <ul>
+        <button class="hamburger" aria-label="Menü öffnen/schließen" aria-expanded="false">☰</button>
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Über uns</a></li>
-            <li><a href="benefits.html">Vorteile</a></li>
+            <li><a href="benefits.html" aria-current="page">Vorteile</a></li>
             <li><a href="pricing.html">Preise</a></li>
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
 
+    <header>
+        <h1>Vorteile von GastroConnect</h1>
+        <p>Warum unsere digitalen Speisekarten Ihre erste Wahl sein sollten</p>
+    </header>
+
     <section class="benefits">
-        <h2>Vorteile der digitalen Speisekarte</h2>
-        <ul>
-            <li><strong>Kosteneinsparung:</strong> Keine Druckkosten, kein Papierabfall</li>
-            <li><strong>Hygiene:</strong> Kontaktlose Nutzung für mehr Sicherheit</li>
-            <li><strong>Flexibilität:</strong> Echtzeit-Updates Ihrer Speisekarte</li>
-            <li><strong>Effizienz:</strong> Weniger Arbeit für Ihr Personal</li>
-            <li><strong>Modernität:</strong> Stilvolles und innovatives Ambiente</li>
-            <li><strong>Nachhaltigkeit:</strong> Umweltfreundlich ohne Papier</li>
-            <li><strong>Kundenzufriedenheit:</strong> Mehrsprachigkeit für internationale Gäste</li>
+        <ul class="benefits-list">
+            <li><span>✓</span> Hygienisch: Keine physischen Speisekarten mehr.</li>
+            <li><span>✓</span> Effizient: Sofortige Updates ohne Druckkosten.</li>
+            <li><span>✓</span> Nachhaltig: Weniger Papier, mehr Umweltschutz.</li>
+            <li><span>✓</span> Modern: QR-Codes für ein zeitgemäßes Gästeerlebnis.</li>
         </ul>
-        <img src="img/benefits.jpg" alt="Vorteile der QR-Speisekarte" class="section-img">
     </section>
 
     <footer>
         <p>© 2025 GastroConnect | Alle Rechte vorbehalten</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
