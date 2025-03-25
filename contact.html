@@ -19,14 +19,36 @@
         </ul>
     </nav>
 
+    <header class="contact-header">
+        <h1>Kontaktieren Sie uns</h1>
+        <p>Wir freuen uns darauf, Ihr Restaurant digital fit zu machen!</p>
+    </header>
+
     <section class="contact">
-        <h2>Interesse geweckt?</h2>
-        <p>Bringen Sie Ihr Restaurant auf das nächste Level – kontaktieren Sie uns!</p>
-        <div class="contact-info">
-            <p><strong>Telefon:</strong> 0152 37824011</p>
-            <p><strong>E-Mail:</strong> <a href="mailto:gastroconnect.menu@gmail.com">gastroconnect.menu@gmail.com</a></p>
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>Interesse geweckt?</h2>
+                <p>Bringen Sie Ihr Restaurant auf das nächste Level mit unseren digitalen Speisekarten. Kontaktieren Sie uns direkt oder nutzen Sie das Formular!</p>
+                <div class="contact-info">
+                    <h3>Ihr Ansprechpartner</h3>
+                    <p><strong>Philipp Buhrandt</strong></p>
+                    <p><strong>Telefon:</strong> <a href="tel:+4915237824011">0152 37824011</a></p>
+                    <p><strong>E-Mail:</strong> <a href="mailto:gastroconnect.menu@gmail.com">gastroconnect.menu@gmail.com</a></p>
+                </div>
+                <a href="#contact-form" class="cta">Jetzt Nachricht senden</a>
+            </div>
+            <div class="contact-form">
+                <h3>Schreiben Sie uns</h3>
+                <form id="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Ihr Name" required>
+                    <input type="email" name="email" placeholder="Ihre E-Mail" required>
+                    <input type="tel" name="phone" placeholder="Ihre Telefonnummer (optional)">
+                    <textarea name="message" placeholder="Ihre Nachricht" rows="5" required></textarea>
+                    <button type="submit" class="cta">Absenden</button>
+                </form>
+            </div>
         </div>
-        <img src="img/contact.jpg" alt="Kontaktieren Sie uns" class="section-img">
+        <!-- Hintergrundbild wird via CSS eingefügt -->
     </section>
 
     <footer>
